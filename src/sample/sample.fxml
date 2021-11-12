@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="443.0" prefWidth="622.0">
+         <children>
+            <Label layoutX="84.0" layoutY="55.0" prefHeight="15.0" prefWidth="110.0" text="文件夹路径" />
+            <TextField fx:id="filePath" layoutX="173.0" layoutY="51.0" prefHeight="23.0" prefWidth="329.0" promptText="文件所在文件夹路径" />
+            <Label layoutX="84.0" layoutY="125.0" text="修改名单" />
+            <TextArea fx:id="fileNames" layoutX="173.0" layoutY="125.0" prefHeight="200.0" prefWidth="200.0" promptText="每行一个名字" wrapText="true" />
+            <Button id="mybutton" fx:id="myButton" layoutX="468.0" layoutY="210.0" mnemonicParsing="false" onAction="#editFilesName" prefHeight="30.0" prefWidth="110.0" text="提交修改" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Text fx:id="runInfo" fill="RED" layoutX="84.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="运行提示" wrappingWidth="455.0" />
+            <Text fill="RED" layoutX="525.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+            <Text fill="RED" layoutX="407.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+            <Text layoutX="423.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="作者：邢彦年    2021.09.17" wrappingWidth="185.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
